@@ -1,0 +1,89 @@
+JavaScript Operators:
+
+1)Arithematic operators: +,-,*,/,%
+Multiplication -- *
+Division -- /
+
+
+Assignment:
+
+Var student = "swetha"
++=
+-=
+/=
+%=
+
+Logical operators :
+
+And - &&
+Or - ||
+Not - !
+
+Relational operators :
+
+< , > , <= , >= , == , === , != , !===
+
+Conditional operators / ternary operator(?) :
+
+Syntax : condition ? e1:e2
+
+
+
+#vs code practice
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //alert("mani")
+        //document.write(alert)
+
+        //a=prompt("Enter your name!")
+        //alert("my name is ",a)
+
+        //let aa=prompt("Enter your name?")
+        //alert(`my name is :${aa}`)
+
+        let a1=prompt()
+        document.write(a1,"<br>")
+        document.write(typeof(a1),"<br>")
+        let a2=prompt()
+        document.write(a1+a2,"<br>")
+
+
+
+
+        //let t=40 //t 
+        //let r=(t>40)? 'Ac-off':'Ac-on' // greater - off ; less - on
+        //document.write(r,"<br>")
+
+
+        //let a=5
+        //let b="5"
+        //document.write(a>=b,"<br>") //t
+        //document.write(a==b,"<br>") //t
+        //document.write(a===b,"<br>") //f
+        //document.write(a!=b,"<br>") //f
+        // document.write(a!==b,"<br>") //t
+
+        //a++
+        //b--
+        //a+=40 //a=a+40 a=5+40=45
+        //b-=5  //b=b-5 b=2-5=-3
+        //document.write(a>b && a>2,"<br>")
+        //document.write(a<b && a>12,"<br>")
+        //document.write(a>b || a>2,"<br>")
+        //document.write(!(a>12),"<br>")
+        //document.write(a,"<br>")
+        //document.write(b,"<br>")
+        //document.write(a*b,"<br>")
+        //document.write(a**b,"<br>")
+        //document.write(a/b,"<br>")
+        //document.write(a%b)
+    </script>
+</body>
+</html>
