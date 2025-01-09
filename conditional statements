@@ -1,0 +1,125 @@
+CONDITIONAL STATEMENT :
+-- To make the set of instructions(block of code)(conditional block) execute only when the given condition is true.
+-- used to decide whether the code has to be executed or skip based on the given condition.
+-- line-line(sequence)
+
+BLOCK OF CODE : set of instructions
+-- it will execute only when that specific condition is true
+CONDITION : An expression that evaluates an result (t/f)
+EX : console.log(5>6)
+
+METHODS :
+ if-else
+Else if 
+Switch
+Ternary operator
+
+EX: Condition is true 
+        let a=5;
+        let b=10;
+        if(a<b){
+            document.write("hi divya","<br>")
+        }
+        document.write("welcome to india") 
+
+O/P : hi divya
+          welcome to india
+
+
+EX: Condition is false
+        let a=5;
+        let b=10;
+        if(a>b){
+            document.write("hi divya","<br>")
+        }
+        document.write("welcome to india") 
+O/P :
+ welcome to india
+ 
+
+EX : IF-else condition , conditon is true
+
+        let a=5;
+        let b=10;
+        if(a<b){
+            document.write("hi divya","<br>")
+        }else{
+        document.write("hi nandu","<br>")
+        }
+
+O/P : hi divya
+
+EX : IF-else condition , conditon is false
+
+        let a=5;
+        let b=10;
+        if(a>b){
+            document.write("hi divya","<br>")
+        }else{
+        document.write("hi nandu","<br>")
+        }
+
+O/P : hi nandu
+
+EX: else - if
+
+       age=prompt("enter your age?")
+        name=prompt("enter your name?")
+        if(age<18){
+            alert(name + " you are too young to marry")
+        }else if (age>35){
+            alert(name + "you are too old to marry")
+        }else{
+            alert(name + " you are perfect to marry")
+        }
+
+O/P : <18 - >35 : you are perfect to marry
+
+
+
+
+vs code: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let a = prompt("Team A: Enter your score:");
+        let b = prompt("Team B: Enter your score:");
+        if(a > 300 || b > 300){
+            if(a + b < 500){
+                alert("You can team up");
+            }else{
+                alert("You can't team up");
+            }
+        }
+        else{
+            alert("You can't team up");
+        }
+
+
+        //age=prompt("enter your age?")
+        //name=prompt("enter your name?")
+        //if(age<18){
+            //alert(name + " you are too young to marry")
+
+        //}else if (age>35){
+           // alert(name + "you are too old to marry")
+        //}else{
+            //alert(name + " you are perfect to marry")
+        //}
+        //let a=5;
+        //let b=10;
+        //if(a>b){
+            //document.write("hi divya","<br>")
+        //}else{
+        //document.write("hi nandu","<br>")
+        //}
+        // out of block 
+    </script>
+</body>
+</html>
