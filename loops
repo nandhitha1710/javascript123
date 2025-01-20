@@ -1,0 +1,103 @@
+LOOPS:
+Conditional statements:
+---block of code
+1-10 numbers
+
+Loops: block of code several tyms.
+1-10
+10 times
+
+1)for loop
+2)for in
+3)for of
+4)do while
+
+1)for loop: for(initialization; condition;update-expression{
+   ----block of code
+}
+
+Init: i=1,2,3,4,5
+Cond: 1<=5(T),2<=5(T),…..6<=5(F)
+Up: i++=i=i+1 #1+1=2;2+1=3;4;5
+Block of code : 1,2,3,4,5
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let i=1;i<=5;i++){
+            console.log(i)
+}
+    </script>
+</body>
+</html>
+
+
+o/p: 1,2,3,4,5
+
+
+
+   for(let i=0;i<7;i=i+2){
+            console.log(i)
+            document.write(i)
+        }
+
+
+o/p:2,4,6,8 
+
+
+vs code:
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for(let i=1;i<=5;i++){
+            //console.log(i)
+        //}
+
+
+        //for(let i=0;i<7;i=i+2){
+          //  console.log(i+2)
+           
+        //}
+
+        //for(let i=10;i<=15;i++){
+            //console.log(i)
+        //}
+
+        //for(let i=1;i<6;i++){
+            //console.log("charan")
+            //document.write("charan",'<br>')
+        //}
+
+        //for(let i=1;i<=10;i++){
+            //console.log(i*i)
+        //}
+
+        //for(let i=1;i<=10;i++){
+            //document.write(`9 x ${i} = ${i*9}`,"<br>")
+        //}
+
+        const numbers=[1,2,3,4,5]
+        let sum=0;
+        for(let i=0;i<numbers.length;i++){
+            //0<5
+            sum=sum+numbers[i]
+            //0+1=1
+            //1+2=3
+            //3+3=6
+            //6+4=10
+            //10+5=15
+            console.log(sum)
+        }
