@@ -1,0 +1,59 @@
+23/1/25
+
+23 January 2025
+09:43
+
+Function is a reusable block of code .
+It can be call any where in the program
+You can use the same code with different arguments to get the results.
+
+JS:
+Key word = function
+()
+Parameters=values(variables) 
+
+
+ function greet(){
+            console.log("hello nandu")
+        }
+        greet()
+        console.log("hi nandhitha")
+        greet()
+        console.log("hi sai")
+
+o/p:
+hello nandu
+ hi nandhitha
+ hello nandu
+ hi sai
+
+
+ function g(name){
+            console.log("hello "+ name)
+        }
+        let name=prompt("Enter your name?")
+        g(name)
+
+o/p:
+Hello nandu
+
+Funtion return :
+The return statement can be used to return the value to function call.
+Ex:
+Function a(aa,bb){
+Return aa+bb;
+}
+Let n1=parseFloat(prompt("enter the number1"))
+Let n2=parseFloat(prompt("enter the number2"))
+Let result =a(n1,n2);
+Console.log("The sum is :"+result)
+
+Anonynomus function : 
+A function without any name , after we create a function without name and we assign it to a variable
+
+Ex:
+Sum=function(n1,n2){
+Let r=n1+n2
+Return r
+}
+Console.log(sum(8,9))
