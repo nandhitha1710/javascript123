@@ -1,0 +1,181 @@
+Arrow function : 
+Es6 version
+More readable and more structure
+Anonymous function (lambda function)
+Without function name but they are assigned to a variable
+
+Example : 
+Arrow function without parameter
+
+Let c=()=>{
+Console.log("hi nandu")
+}
+c()
+
+Arrow function with parameter
+
+Let x=(x,y)=>{
+Console.log(x+y)
+}
+x(20,30)
+x(40,50)
+
+Arrow function with one argument
+#without using parenthesis
+
+Let greet=x=>console.log(x);
+Greet("hello")
+
+Arrow function without argument
+
+Let greet=()=>console.log("hello")
+Greet()
+
+EX : Arrow functions as an expression
+Let age = 18;
+Let welcome=(age<18)?
+() =>console.log("hi nandu"):
+()=>console.log("hi nandhitha");
+Welcome()
+
+---Synchronous and asynchronous :
+---step by step
+---one task
+
+Example synchronous :
+Function task1(){
+Console.log("task 1 : start")
+}
+Function task2(){
+Console.log("task 2 : start")
+}
+Function task3(){
+Console.log("task 3 : start")
+}
+task1()
+task2()
+task3()
+
+o/p: task 1 : start
+        task 2 : start
+        task 3 : start
+
+Asynchronous function : used to execute multiple tasks at a time
+
+Example :
+console.log("hi nandu");
+setTimeout(()=>{
+    console.log(" hi i am waiting")
+},5000);
+console.log(" i am in lab")
+
+o/p : 
+Hi nandu
+I am in lab
+//after 5 secs
+Hi I am waiting
+
+JavaScript callbacks : A callback function is a function that is passed as an argument to another function ;
+#functions
+#oops
+#file handling
+#multithreading
+#exception handling
+#json
+
+Function greet(name,callback){
+Console.log(`Hello , ${name}!`)
+Callaback();
+//this calls the callback function after greeting
+}
+Function sayGoodbye(){
+Console.log("Goodbye")
+}
+//call greet and pass sayGoodbye as the callback
+Greet("sam",sayGoodbye)
+
+Promise :
+Three states
+1)pending : still not completed 
+2)fulfilled : task completed
+3)rejected : the operation is failed 
+
+Example :
+Let myPromise = new Promise((resolve,reject)=>
+{ let success = true;
+If(success){
+Resolve("task completed");
+};
+Else{
+Reject("task failed")
+}
+};
+)
+
+
+vs code :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //arrow function
+
+        // let c = () =>{
+        //     console.log("hi nandu")  
+        // }
+        // c()
+
+//         let age=18;
+//         let welcome=(age<18)?
+// ()=>console.log("hi nandu"):
+// ()=>console.log("hi nandhitha");
+// welcome()
+
+//synchronous function
+
+// function task1(){
+// console.log("task 1 : start")
+// }
+// function task2(){
+// console.log("task 2 : start")
+// }
+// function task3(){
+// console.log("task 3 : start")
+// }
+// task1()
+// task2()
+// task3()
+
+// console.log("hi nandu");
+// setTimeout(()=>{
+//     console.log(" hi i am waiting")
+// },5000);
+// console.log(" i am in lab")
+
+// function greet(name,callback){
+// console.log(`Hello , ${name}!`)
+// callaback();
+// //this calls the callback function after greeting
+// }
+// function sayGoodbye(){
+// console.log("Goodbye")
+// }
+// //call greet and pass sayGoodbye as the callback
+// greet("sam",sayGoodbye)
+
+
+let myPromise = new Promise((resolve,reject)=>
+{ let success = true;
+if(success){
+resolve("task completed");
+};
+else{
+reject("task failed")
+}
+};
+)
