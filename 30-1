@@ -1,0 +1,113 @@
+--to create a element by using js:
+1)single element
+2)multiple element
+Ex 1:
+To create multiple elements:
+Const titles=["sai","charan","nandu"]
+For(let i=0;i<titles.length;i++){
+Let title =document.createElement("h1");
+Title.className="a"
+Title.textContent=title[i]
+Console.log(title)
+Ex 2:
+Let title
+For(let i=0;i<3;i++){
+Title=document.createElement("h2")
+Title.className="tt"
+Title.textContent=i
+console.log(title)
+
+Removing a child element from a parent node:
+<h1> removing child node </h1>
+<h2> I am nandu </h2>
+<ul>
+<li>nandu</li>
+<li>sahitya</li>.
+</ul>
+
+<script>
+Const ul=document.querySelector('ul')
+Const lists=document.querySelectorAll('li')
+For(const list of lists){
+Console.log('removing : ${list.textContent}')
+Ul.removeChild(list)
+
+
+To append a new element:
+Append(): to append a new element to the parent node.
+
+
+<div id="a">
+    <h1>nandu</h1>
+    <h1>pranathi</h1>
+</div>
+<div id="b">
+    <h1>sai</h1>
+    <h1>sahi</h1>
+</div>
+
+
+vs code :
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     const titles=["sai","charan","nandu"]
+//     for(let i=0;i<titles.length;i++){
+//     let title =document.createElement("h1");
+//     title.className="a"
+//     title.textContent=titles[i]
+//     console.log(title)
+// }
+
+// let title
+// for(let i=0;i<3;i++){
+// title=document.createElement("h2")
+// title.className="tt"
+// title.textContent=i
+// console.log(title)
+// }
+</script>
+
+<!-- <h1> removing child node </h1>
+<h2> I am nandu </h2>
+<ul>
+<li>nandu</li>
+<li>sahitya</li>
+<li>navaneetha</li>
+</ul>
+
+<script>
+const ul=document.querySelector('ul')
+const lists=document.querySelectorAll('li')
+for(const list of lists){
+console.log(`removing : ${list.textContent}`)
+ul.removeChild(list)
+} -->
+</script>
+
+<div id="a">
+    <h1>nandu</h1>
+    <h1>pranathi</h1>
+</div>
+
+<div id="b">
+    <h1>sai</h1>
+    <h1>sahi</h1>
+</div>
+<script>
+    let n=document.createElement("h2")
+    n.textContent="nandu is the team lead"
+
+    let p=document.getElementById("b")
+    p.appendChild(n)
+    console.log(p.innerText)
+</script>
+</body>
+</html>
