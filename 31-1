@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+        <h1>hi</h1>
+        <h1>i am</h1>
+        <h1>nandu</h1>
+    </div>
+<div id="b">
+    <h2 id="a1">hlo</h2>
+    <h2>i am</h2>
+    <h2>sahi</h2>
+
+</div>
+<div id="c">
+    <h2>hlo</h2>
+    <h2>i am</h2>
+    <h2>pavani</h2>
+
+</div>
+<script>
+    let n=document.createElement("h2")
+    n.textContent="how are you"
+
+    let p=document.getElementById("a")
+    let l=document.getElementById("r")
+    p.insertBefore(n,l)
+    console.log(p)
+
+    let nn=document.createElement("h2")
+    nn.textContent="I am fine"
+
+    let pp=document.getElementById("b")
+    let ll=document.getElementById("a1")
+    pp.insertBefore(nn,ll)
+    console.log(pp)
+
+    //removing an element div
+    let b1=document.getElementById("a")
+    b1.remove();
+
+    //removing child element
+    let n1=document.getElementById("b")
+    let n2=document.getElementById("a1")
+    console.log(n1)
+    n1.removeChild(n2)
+
+
+</script>
+</body>
+</html>
